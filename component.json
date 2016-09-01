@@ -1,0 +1,8 @@
+{
+  "name": "wdm",
+  "description": "A simple, lightweight mobile ui",
+  "main": "index.scss",
+  "tag": "master",
+  "dependencies": {},
+  "version": "0.0.1"
+}

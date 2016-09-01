@@ -1,0 +1,65 @@
+@import "../fn";
+
+.tag {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+  min-width: 2.25rem;
+  background-color: #d5e7f5;
+  font-size: .7rem;
+  border-radius: $radius-base;
+  cursor: pointer;
+
+  &.active {
+    background-color: #d5e7f5;
+    color: $color-primary;
+  }
+}
+
+.tag--normal {
+  color: $color-text;
+}
+
+.tag--mini {
+  border-radius: .2rem;
+  padding: 0 .1rem;
+  font-size: .5rem;
+}
+
+.tag--small {
+  border-radius: .2rem;
+  padding: .2rem .4rem;
+  font-size: .5rem;
+}
+
+.tag--large {
+  padding: .2rem .8rem;
+  font-size: .6rem;
+}
+
+.tag--light {
+  background-color: #efefef;
+  color: $color-text;
+}
+
+.tag--disabled {
+  color: map-get($color-disabled, text);
+  background-color: map-get($color-disabled, bg);
+}
+
+.tag--red {
+  color: #fff;
+  background: $color-red;
+}
+
+.tag--purple {
+  background: $color-purple;
+  color: #fff;
+}
+
+.tag--blue {
+  color: #fff;
+  background: $color-primary;
+}

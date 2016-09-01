@@ -1,0 +1,73 @@
+@import "../fn";
+
+.tab-wrapper {
+  background: #fff;
+}
+
+.tab-nav-head {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+
+  .tab-ink-bar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: $color-primary;
+  }
+
+  .tab-item {
+    flex: 1;
+    width: 0;
+    text-align: center;
+    padding: .4rem 0;
+
+    &.active {
+      color: $color-primary;
+      border-bottom: 2px solid $color-primary;
+    }
+  }
+}
+
+.tab-nav-head-inner {
+  position: relative;
+
+  .tab-nav-head {
+    display: block;
+  }
+
+  &:after {
+    content: '';
+    @include hairline(bottom);
+  }
+
+  .tab-item {
+    float: left;
+    text-align: center;
+    padding: .4rem .75rem;
+    width: auto;
+  }
+}
+
+.tab-content {
+  position: relative;
+  overflow: hidden;
+  transition: height .3s;
+  // min-height: 7.5rem;
+
+  .tab-pane {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    visibility: hidden;
+    // transition: transform .3s;
+    transform: translateX(-100%);
+    // display: none;
+
+    &.active {
+      position: relative;
+      visibility: visible;
+    }
+  }
+}

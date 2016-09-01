@@ -1,0 +1,12 @@
+@import "../fn";
+
+.collapse-item {
+  .collapse-header {
+    padding: .3rem $gap;
+  }
+
+  .list-block {
+    background: #f7f7f7;
+    margin: 0;
+  }
+}

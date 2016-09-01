@@ -1,0 +1,98 @@
+@import "../fn";
+
+.card {
+  background: #fff;
+  margin: $gap/2 0;
+  position: relative;
+  border-radius: .1rem;
+  font-size: .7rem;
+}
+
+.card-content {
+  position: relative;
+  display: block;
+}
+
+.card-content-inner {
+  padding: .5rem $gap;
+  position: relative;
+
+  > p:first-child {
+    margin-top: 0;
+  }
+  > p:last-child {
+    margin-bottom: 0;
+  }
+  > .list-block, >.content-block {
+    margin: -$gap;
+  }
+}
+
+.card-header, .card-footer {
+  position: relative;
+  padding: .5rem $gap;
+
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+
+  .card-extra {
+    font-size: .65rem;
+    color: $color-text-gray;
+  }
+}
+
+.card-header {
+  border-radius: $radius-small $radius-small 0 0;
+  font-size: .65rem;
+
+  &:after {
+    content: '';
+    @include hairline(bottom);
+    left: $gap;
+  }
+
+  &.no-border {
+    &:after {
+      display: none;
+    }
+  }
+
+  .card-header-content {
+    flex: 1;
+  }
+}
+
+.card-footer {
+  border-radius: 0 0 $radius-small $radius-small;
+  color:#6d6d72;
+
+  .card-footer-content {
+    flex: 1;
+  }
+
+  &:before {
+    content: '';
+    @include hairline(top);
+    left: $gap;
+  }
+
+  &.no-border {
+    &:before {
+      display: none;
+    }
+  }
+}
+
+.card--link {
+  .card-extra {
+    &:after {
+      position: relative;
+      content: "";
+      margin-left: 0;
+      margin-top: -.1rem;
+      @include v-arrow(right, 1px, .45rem);
+    }
+  }
+}
+

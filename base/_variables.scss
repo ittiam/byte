@@ -1,0 +1,130 @@
+@charset "UTF-8";
+
+// 字体
+$font-size-default: 0.7rem !default;
+$line-height-default: 1.5 !default;
+$font-family-default: "Helvetica Neue", Helvetica, STHeiTi, Arial, sans-serif !default;
+$font-weight: 500;
+$font-weight-light: 400;
+
+$icon-font-family: "iconfont" !default;
+
+// ---- 颜色 -----
+// 紫色
+$color-purple: #9395ee !default;
+// 红色
+$color-red: #ff3b30 !default;
+
+// 主色
+$color-primary: #3e98f0 !default;
+$color-danger: #ff3b30 !default;
+$color-warning: #f60 !default;
+$color-success: #4cd964 !default;
+
+$color-primary-active: darken($color-primary, 10%);
+$color-danger-active: darken($color-danger, 10%);
+$color-warning-active: darken($color-warning, 10%);
+$color-success-active: darken($color-success, 10%);
+
+$color-split: #efefef;  //分割线的颜色
+$color-bg: #fff;
+$color-border: #efefef;
+$color-text: #212121; //文案色
+$color-text-secondary: #727272; //次级文案
+$color-text-gray: #b6b6b6; //灰色文案
+$color-text-gray-light: #ccc; //更灰色文案
+$color-disabled: (text: #ccc, bg: #e9e9e9, border: #dbdbdb) !default; // textColor bgColor borderColor
+
+//链接色
+$color-link: $color-primary; //链接色有可能不同于主色
+$color-link-active: $color-primary-active; //链接色有可能不同于主色
+
+$timing-fuction: cubic-bezier(.1,.5,.1,1); // Inspired by $c2prods
+
+// 边距
+$gap: .75rem;
+
+// Borders
+// --------------------------------------------------
+$border-default-width: 1px;
+$border-default-color: $color-border;
+$border-default: $border-default-width solid $border-default-color;
+$border-radius: 0.3rem;
+$radius-base: 0.3rem;
+$radius-small: 0.1rem;
+
+// z-index
+//-----------------------------------------------------
+$z-header: 10 !default;
+$z-footer: 20 !default;
+$z-dropdown: 50 !default;
+$z-mask: 1000 !default;
+$z-dialog: 1001 !default;
+$z-toast: 1001 !default;
+$z-popup: 1501 !default;
+$z-suggest: 2001 !default;
+$z-actionsheet: 2501 !default;
+$z-tip: 3001 !default;
+$z-loading: 9999 !default;
+
+// ---
+$icons: (
+  "icon": " ",
+  "gantanhao": "\e63a",
+  "loading": "\e638",
+  "write": "\e635",
+  "hongbao": "\e634",
+  "edit": "\e617",
+  "search": "\e600",
+  "arrow-left": "\e61d",
+  "add": "\e60d",
+  "tip": "\e60e",
+  "warn": "\e602",
+  "star": "\e607",
+  "location": "\e61f",
+  "discuss": "\e624",
+  "close": "\e60f",
+  "download": "\e62d",
+  "round-check": "\e623",
+  "arrow-right": "\e610",
+  "round": "\e618",
+  "share": "\e61e",
+  "sina": "\e611",
+  "fill-home": "\e62c",
+  "like": "\e625",
+  "dislike": "\e626",
+  "praise": "\e636",
+  "add-fill": "\e603",
+  "round-check-fill": "\e619",
+  "camera": "\e62f",
+  "falling": "\e608",
+  "rising": "\e609",
+  "check": "\e60a",
+  "filter": "\e620",
+  "boult-up": "\e604",
+  "switch": "\e622",
+  "arrow-up": "\e60b",
+  "arrow-down": "\e633",
+  "undo": "\e61a",
+  "tanhao": "\e605",
+  "clean": "\e61b",
+  "bbs": "\e627",
+  "solid-up": "\e601",
+  "vs": "\e60c",
+  "nav": "\e61c",
+  "phone": "\e616",
+  "fill-phone": "\e630",
+  "question": "\e606",
+  "menu": "\e612",
+  "reset": "\e621",
+  "visitor": "\e628",
+  "rmb": "\e62e",
+  "award": "\e629",
+  "fill-user": "\e631",
+  "setting": "\e613",
+  "comment": "\e62a",
+  "solid-down": "\e614",
+  "boult-down": "\e615",
+  "fill-info": "\e62b",
+  "record": "\e632"
+) !default;

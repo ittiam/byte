@@ -1,0 +1,91 @@
+@import "../fn";
+
+.list-item {
+  position: relative;
+  vertical-align: middle;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  transition: background-color .2s;
+
+  &:after {
+    content: '';
+    @include hairline(bottom);
+    left: $gap;
+  }
+
+  &:last-child:after {
+    display: none;
+  }
+
+  &.list-item--top {
+    align-items: flex-start;
+  }
+
+  &.list-item--bottom {
+    align-items: flex-end;
+  }
+
+  .list-content {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .list-media, .list-thumb {
+    width: 1.8rem;
+    margin-right: .5rem;
+  }
+
+  .list-label {
+    width: auto;
+    margin-right: .3rem;
+  }
+
+  .list-extra {
+    color: $color-text-gray;
+    font-size: .6rem;
+  }
+}
+
+.list-block {
+  position: relative;
+
+  &:before {
+    content: '';
+    @include hairline(top);
+  }
+
+  &:after {
+    content: '';
+    @include hairline(bottom);
+  }
+
+  .list-item {
+    padding: .5rem $gap;
+  }
+
+  .list-item-inner {
+    width: 100%;
+  }
+}
+
+.list-item--link {
+  .list-extra {
+    &:after {
+      position: relative;
+      content: "";
+      margin-left: 0;
+      @include v-arrow(right, 1px, .45rem);
+    }
+  }
+}
+
+.list-item--radio,
+.list-item--checkbox {
+  &.disabled {
+    .list-content {
+      color: map-get($color-disabled, text);
+    }
+  }
+}
+
