@@ -1,0 +1,24 @@
+{
+  "name": "byte",
+  "version": "0.0.1",
+  "description": "mobile ui",
+  "main": "index.scss",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/ittiam/byte.git"
+  },
+  "keywords": [
+    "mobile",
+    "ui",
+    "scss"
+  ],
+  "author": "ittiam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ittiam/byte/issues"
+  },
+  "homepage": "https://github.com/ittiam/byte#readme"
+}
