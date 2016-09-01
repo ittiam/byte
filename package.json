@@ -1,5 +1,5 @@
 {
-  "name": "byte",
+  "name": "byte-mobile",
   "version": "0.0.1",
   "description": "mobile ui",
   "main": "index.scss",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/ittiam/byte.git"
+    "url": "https://github.com/ittiam/byte"
   },
   "keywords": [
     "mobile",
     "ui",
     "scss"
   ],
-  "author": "ittiam",
-  "license": "MIT",
+  "author": "ittiamc <ittiamc@gmail.com>",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ittiam/byte/issues"
   },
