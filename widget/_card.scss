@@ -26,18 +26,25 @@
   > .list-block, >.content-block {
     margin: -$gap;
   }
+
+  > .list-block {
+    &:before, &:after {
+      display: none;
+    }
+  }
 }
 
 .card-header, .card-footer {
   position: relative;
   padding: .5rem $gap;
+  font-size: .65rem;
+  color: $color-text-secondary;
 
   display: flex;
   align-items: center;
   vertical-align: middle;
 
   .card-extra {
-    font-size: .65rem;
     color: $color-text-gray;
   }
 }

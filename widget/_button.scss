@@ -51,9 +51,11 @@ $btn-large-font-size: 0.8rem;
 .button--small {
   display: inline-block;
   width: auto;
-  border-radius: $radius-small;
-  padding: 0.1rem 0.5rem;
+  border-radius: .2rem;
   font-size: $btn-small-font-size;
+  padding: 0.25rem 0.6rem;
+  line-height: 1;
+  height: auto;
 }
 
 @mixin button-variant($bg, $color: #fff) {
