@@ -43,7 +43,7 @@
   vertical-align: middle;
 
   .card-extra {
-    color: $color-text-gray;
+    color: $color-text-secondary;
   }
 }
 
@@ -97,7 +97,7 @@
       margin-left: 0;
       margin-top: -.1rem;
       @include v-arrow(right, 1px, .45rem);
-      border-color: #b6b6b6;
+      border-color: $color-text-secondary;
     }
   }
 }
