@@ -16,7 +16,7 @@ $modal-bg-color: #fafafc;
 
 .modal {
   position: fixed;
-  width: 85%;
+  width: 80%;
   z-index: $z-popup + 1;
   left: 50%;
   top: 50%;
@@ -41,9 +41,10 @@ $modal-bg-color: #fafafc;
   text-align: left;
   padding: 0 1rem;
   font-size: .75rem;
-  color: $color-text-gray;
+  color: $color-text;
   word-wrap: break-world;
   word-break: break-all;
+  text-align: center;
 }
 
 .modal-footer {
@@ -62,6 +63,8 @@ $modal-bg-color: #fafafc;
     display: block;
     flex: 1;
     width: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
     color: $color-primary;
     text-decoration: none;
     -webkit-tap-highlight-color: rgba(0,0,0,0);
@@ -69,9 +72,9 @@ $modal-bg-color: #fafafc;
 }
 
 .button-modal {
-  &.default {
-    color: $color-text;
-  }
+  // &.default {
+  //   color: $color-text;
+  // }
 
   &.primary {
     color: $color-primary;
